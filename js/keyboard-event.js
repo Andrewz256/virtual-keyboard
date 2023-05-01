@@ -10,16 +10,16 @@ window.addEventListener(
         
         output.textContent += " " + valueKey;
         if (valueKey == "Shift"){
-            for (let i=0 ; i <keyButton.length ; i++) {
+            for (let i=0 ; i <keyButton.length; i++) {
                 keyButton[i].classList.add("capitalize");
             }
-        }
-        for (let i=0 ; i <keyButton.length ; i++) {
+        };
+        for (let i=0 ; i <keyButton.length; i++) {
             if(keyButton[i].value==codeKey.toUpperCase()){
                 keyButton[i].classList.add("active");
             };
 
-        }
+        };
 
     },
     true
@@ -32,20 +32,18 @@ window.addEventListener(
     let valueKey = `${event.key}`;
     const keyButton = document.getElementsByTagName("button");
     if (valueKey == "Shift"){
-        for (let i=0 ; i <keyButton.length ; i++) {
+        for (let i=0 ; i <keyButton.length; i++) {
             keyButton[i].classList.remove("capitalize");
-        }
-    }
-    for(let j=0 ; j<keyButton.length ; j++){
+        };
+    };
+    for(let j=0 ; j<keyButton.length; j++){
         if(keyButton[j].value == codeKey.toUpperCase()){
             keyButton[j].classList.remove("active");
-        }
-    }
+        };
+    };
 })
 
-
-
-function keyPress () {
+function keyPress() {
   const key = document.querySelectorAll(".key");
   const output = document.getElementById("output");
 
@@ -72,4 +70,4 @@ function keyPress () {
 
 }
 
-export {keyPress};
+export { keyPress };

@@ -1,7 +1,7 @@
 
 
 function stringOS() {
-  let OSName = "unknown"
+  let OSName = "unknown";
   let userOS = navigator.userAgent.toLowerCase();
   let mainUserLang = navigator.languages[0];
   let secondUserLang = navigator.languages[1];

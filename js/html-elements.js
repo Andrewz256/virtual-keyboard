@@ -85,7 +85,6 @@ function createTextArea() {
   outputArea.classList.add("output");
   outputArea.setAttribute("id", "output");
   outputArea.textContent =">";
-  //outputArea.type = "text";
   main.appendChild(textArea);
   textArea.appendChild(outputArea);
   
@@ -97,7 +96,7 @@ function createToggleBar() {
   toggleBar.classList.add("toggle-bar");
   main.appendChild(toggleBar);
   let OS = stringOS();
-  toggleBar.innerHTML = OS
+  toggleBar.innerHTML = OS;
 }
 
 function createKeyboard() {
