@@ -1,0 +1,100 @@
+:root {
+    --color-light: #92c873;
+    --color-dark: #02bd0e;
+    --color-black: #152319;
+    --color-white: #c6d2bf;
+  }
+
+.body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    color: #152319;
+}
+
+.header {
+    background: var(--color-white);
+    width: 550px;
+    padding: 0;
+    text-align: center;
+}
+.h1 {
+    font-size: 17px;
+
+}
+.main {
+    width: 550px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.toggle-bar {
+    margin-top: 20px;
+    height: 20px;
+    border: 1px var(--color-dark) solid;
+}
+.text-area {
+    padding: 0;
+    text-align: center;
+    border: 1px solid var(--color-light);
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+
+}
+.text-area > p {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+}
+.keyboard {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+
+}
+.layer {
+    display: flex;
+    
+    flex-direction:row;
+    column-gap: 5px;
+}
+.key {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    min-width: 25px;
+    border: #02bd0e 1px solid;
+    border-radius: 15px;
+}
+.space-but {
+    width: 170px;
+}
+.shift-ctrl-but {
+    width: 70px;
+}
+.key:hover {
+    background: var(--color-white);
+}
+.key:active {
+    background: var(--color-dark);
+}
+.active {
+    background: var(--color-dark);
+}
+.capitalize {
+    text-transform: capitalize;
+}
