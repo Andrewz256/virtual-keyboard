@@ -95,8 +95,8 @@ function createToggleBar() {
   const toggleBar = document.createElement("div");
   toggleBar.classList.add("toggle-bar");
   main.appendChild(toggleBar);
-  let OS = stringOS();
-  toggleBar.innerHTML = OS;
+  //let OS = stringOS();
+  //toggleBar.innerHTML = OS;
 }
 
 function createKeyboard() {
